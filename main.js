@@ -25,8 +25,10 @@ const calcularImc = () => {
 
 btnCalcular.addEventListener("click", calcularImc);
 
-const btnBorrar = document.querySelector("#btnBorrar");
 
+// se crea una constante para seleccionar el nodo id btnborrar
+const btnBorrar = document.querySelector("#btnBorrar");
+// se crea la funcion borrarImc para que ejecute lo que esta adentro de la funcion
 const borrarImc = () =>{
   const peso = document.querySelector("#peso");
   peso.value= "";
@@ -37,7 +39,7 @@ const borrarImc = () =>{
   const imagen = document.querySelector("#imagen");
   imagen.src = "";
 }
-
+// ejecuta la funcion donde se llama a la constante y se le dice al programa que va a ejecutar un evento que se llama click y que se ejecute la funcion que se programo
 btnBorrar.addEventListener("click", borrarImc);
 
 
